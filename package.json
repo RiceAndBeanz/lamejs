@@ -1,6 +1,6 @@
 {
   "name": "@breezystack/lamejs",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Pure JavaScript MP3 Encoder",
   "type": "module",
   "module": "dist/lamejs.js",
