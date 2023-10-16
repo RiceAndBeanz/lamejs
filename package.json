@@ -1,5 +1,5 @@
 {
-  "name": "lamejs-fork",
+  "name": "@breezystack/lamejs",
   "version": "1.2.1",
   "description": "Pure JavaScript MP3 Encoder",
   "type": "module",
@@ -9,14 +9,13 @@
   "typings": "type.d.ts",
   "exports": {
     "default": {
-      "import": "./dist/lampjs-fork.js",
-      "require": "./dist/lampjs-fork.iife.js",
+      "import": "./dist/lampjs.js",
+      "require": "./dist/lampjs.iife.js",
       "types": "./type.d.ts"
     }
   },
   "directories": {
-    "doc": "doc",
-    "test": "test"
+    "doc": "doc"
   },
   "scripts": {
     "build": "vite build",
