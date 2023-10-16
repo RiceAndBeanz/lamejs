@@ -1,15 +1,30 @@
 {
-  "name": "lamejs",
+  "name": "lamejs-fork",
   "version": "1.2.1",
   "description": "Pure JavaScript MP3 Encoder",
-  "main": "src/js/index.js",
+  "type": "module",
+  "module": "dist/lamejs.js",
+  "main": "dist/lamejs.iife.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lampjs.js",
+      "require": "./dist/lampjs.iife.js"
+    }
+  },
   "directories": {
     "doc": "doc",
     "test": "test"
   },
   "scripts": {
+    "build": "vite build",
     "test": "node src/js/Tests.js"
   },
+  "files": [
+    "doc",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhuker/lamejs.git"
@@ -28,5 +43,9 @@
   "homepage": "https://github.com/zhuker/lamejs#readme",
   "dependencies": {
     "use-strict": "1.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "vite": "^4.4.9"
   }
 }
