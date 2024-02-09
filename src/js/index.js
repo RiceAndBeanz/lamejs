@@ -118,7 +118,7 @@ function Mp3Encoder(channels, samplerate, kbps) {
         if (channels == 1) {
             right = left;
         }
-        assert(left.length == right.length);
+        assert(left.length == right?.length);
         if (left.length > maxSamples) {
             maxSamples = left.length;
             mp3buf_size = 0 | (1.25 * maxSamples + 7200);

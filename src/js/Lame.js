@@ -1506,7 +1506,7 @@ function Lame() {
         for (var i = 0; i < nsamples; i++) {
             in_buffer[0][i] = buffer_l[i];
             if (gfc.channels_in > 1)
-                in_buffer[1][i] = buffer_r[i];
+                in_buffer[1][i] = buffer_r?.[i];
         }
 
         return lame_encode_buffer_sample(gfp, in_buffer[0], in_buffer[1],
